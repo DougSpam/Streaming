@@ -1,0 +1,51 @@
+@import url(section-banner.css);
+
+.cabecalho {
+    width: 100%;
+}
+
+.menu-hamburguer {
+    margin-top: -1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.menu-hamburguer__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+
+.menu-hamburguer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-hamburguer__texto {
+    text-align: center;
+    font-size: 24px;
+}
+
+.menu-hamburguer button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.menu-hamburguer__usuario {
+    display: flex;
+}
+
+.img-logo  {
+    width: 140px;
+}
+
+.img-usuario {
+    filter: brightness(0) invert(1);
+    width: 60px;
+    margin-right: 1em;
+}
