@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-left: 2em;
+}
+
+.img-card {
+    width: 300px;
+    height: 300px;
+}
+
+.img-globo {
+    padding: 3em;
+    width: 220px;
+    height: 220px;
+    border-radius: 32px;
+}
+
+.card__vendas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 4em;
+    padding-left: 10px;
+}
+
+.card__texto {
+    text-align: center;
+    font-size: 20px;
+}
+
+.card__texto button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 7px;
+}
+
+.card__preço {
+    margin: 0.7em 0;
+}
+
+.card__texto button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
