@@ -26,14 +26,33 @@
 
            
             <div>
-                <button>
+                <button id="btnUsuario">
                     <img id="usuario" class="img-usuario" src="src/img/do-utilizador.png" alt="">
                 </button>
-
-                <button>
+            
+                <button id="btnCarrinho">
                     <img id="carrinhoDeCompra" class="img-usuario" src="src/img/icons8-compra-96.png" alt="">
                 </button>
             </div>
+            
+            <div class="modal" id="modalUsuario">
+                <div class="modal__contente">
+                    <div class="modal__textos">
+                        <h2>MANUTENÇÃO!</h2>
+                        <button class="botoes__confirmar" id="fecharModalUsuario">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="modalCarrinho">
+                <div class="modal__contente">
+                    <div class="modal__textos">
+                        <h2>MANUTENÇÃO!</h2>
+                        <button class="botoes__confirmar" id="fecharModalCarrinho">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </header>
     
@@ -41,14 +60,15 @@
         <h1 class="banner__titulo">Melhores streaming online</h1>
         <p class="banner__texto">Compra rapida e segura</p>
         <p class="banner__texto">Receba na mesma hora!</p>
-        <input type="search" class="banner__pesquisa" placeholder="O que você procura?">
+        <input id="inputPesquisa" type="search" class="banner__pesquisa" placeholder="O que você procura?">
     </section>
 
 
-    <section class="card">
+    <section id="cardsContainer" class="card">
         <div class="card__vendas">
             <img class="img-card" src="src/img/primevideo.svg" alt="prime video">
             <div class="card__texto">
+                <h1>Prime Video</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">8,00R$</p>
                 <button id="comprarProduto">Comprar</button>
@@ -58,6 +78,7 @@
         <div class="card__vendas">
             <img class="img-card" src="src/img/netflix.svg" alt="prime video">
             <div class="card__texto">
+                <h1>Netflix</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">10,00R$</p>
                 <button id="comprarProduto">Comprar</button>
@@ -67,6 +88,7 @@
         <div class="card__vendas">
             <img class="img-card" src="src/img/disney.svg" width="480" height="480" alt="prime video">
             <div class="card__texto">
+                <h1>Disney Plus</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">8,00R$</p>
                 <button id="comprarProduto">Comprar</button>
@@ -76,6 +98,7 @@
         <div class="card__vendas">
             <img class="img-globo" src="src/img/globoplay.png" alt="prime video">
             <div class="card__texto">
+                <h1>Globyplay</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">8,00R$</p>
                 <button  id="comprarProduto">Comprar</button>
@@ -85,6 +108,7 @@
         <div class="card__vendas">
             <img class="img-card" src="src/img/chunchyroll.svg" alt="prime video">
             <div class="card__texto">
+                <h1>chunchyroll</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">8,00R$</p>
                 <button  id="comprarProduto">Comprar</button>
@@ -94,6 +118,7 @@
         <div class="card__vendas">
             <img class="img-card" src="src/img/hbomax.svg" alt="prime video">
             <div class="card__texto">
+                <h1>hbomax</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">8,00R$</p>
                 <button  id="comprarProduto">Comprar</button>
@@ -103,6 +128,17 @@
         <div class="card__vendas">
             <img class="img-card" src="src/img/starplus.svg" alt="prime video">
             <div class="card__texto">
+                <h1>StarPlus</h1>
+                <h2>1 mês</h2>
+                <p class="card__preço">8,00R$</p>
+                <button  id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas">
+            <img class="img-card" src="src/img/spotify.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>Spotify</h1>
                 <h2>1 mês</h2>
                 <p class="card__preço">8,00R$</p>
                 <button  id="comprarProduto">Comprar</button>
@@ -112,10 +148,28 @@
     </section>
 
     <div class="botao__fixo">
-        <a href="">
+        <a href="https://chat.whatsapp.com/CAghkdawI1REIeG9UgSLgx" target="_blank">
             <p>Seja um revendedor</p>
         </a>
     </div>
 
+
+
+    <div class="modal" id="modal">
+        <div class="modal__contente">
+            <div class="modal__textos">
+                <h2>LEMBRANDO!!!</h2>
+                <p>Você não pode fazer nenhuma altereção dentro da conta como email, senha, e se possivel perfils.</p>
+                <p>caso a conta não funcione entre em contato com o suporte!</p>
+                <button class="botoes__confirmar" id="confirmarCompra">Confirmar</button>
+                <button class="botoes__confirmar" id="cancelarCompra">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
 </body>
 </html>

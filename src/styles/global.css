@@ -34,3 +34,12 @@ body {
     text-decoration: none; /* Remove sublinhado do link */
 }
 
+@media (max-width: 768px) {
+    .botao__fixo {
+        margin-top: 2em;
+        padding: 2px;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        opacity: 0.3;
+    }
+}

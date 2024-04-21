@@ -1,9 +1,9 @@
 .banner {
+    margin-top: 8em;
     background-image: url(../img/background-img.jpg);
     color: #fff;
     text-align: center;
     padding: 2.5em 2em;
-    margin-top: -1.2%;
 }
 
 .banner__titulo {
@@ -20,6 +20,10 @@
     -webkit-text-stroke: 0.5px black;
 }
 
+.card__texto h1 {
+    display: none;
+}
+
 .banner__pesquisa {
     background-color: transparent;
     border: 1px solid #fff;
@@ -33,4 +37,13 @@
 .banner__pesquisa::placeholder {
     font-weight: 400;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    
+    
+    .banner__pesquisa {
+        width: 60%;
+    }
 }
