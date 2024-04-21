@@ -8,6 +8,7 @@ body {
     font-family: "Poppins";
     background-color: rgb(8, 2, 23);
     color: #fff;
+    overflow-x: hidden !important;
 }
 
 .botao__fixo {
@@ -19,6 +20,7 @@ body {
     border-radius: 3px;
     padding: 7px;
     z-index: 999;
+
 }
 
 .botao__fixo:hover {
