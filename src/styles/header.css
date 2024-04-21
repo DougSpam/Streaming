@@ -34,6 +34,7 @@
 }
 
 .menu-hamburguer a{
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -46,6 +47,7 @@
 }
 
 .menu-hamburguer button {
+    cursor: pointer;
     text-decoration: none;
     background-color: transparent;
     border: 0;
