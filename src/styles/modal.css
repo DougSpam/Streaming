@@ -56,6 +56,12 @@
     z-index: 999;
 }
 
+.botoes__confirmar__menu {
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+    border: 15px solid white;
+}
 
 
 @media (max-width: 768px) {
