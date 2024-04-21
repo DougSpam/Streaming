@@ -1,6 +1,6 @@
 .banner {
     margin-top: 8em;
-    background-image: url(../img/background-img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-img.jpg);
     color: #fff;
     text-align: center;
     padding: 2.5em 2em;
@@ -10,7 +10,6 @@
     font-size: 40px;
     font-weight: 700;
     -webkit-text-stroke: 0.2px black; /* Contorno de 1px preto */
-
 }
 
 .banner__texto {

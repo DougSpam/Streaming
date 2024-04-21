@@ -1,6 +1,8 @@
 @import url(section-banner.css);
 @import url(section-card.css);
 @import url(modal.css);
+@import url(footer.css);
+
 
 .cabecalho {
     display: flex;
