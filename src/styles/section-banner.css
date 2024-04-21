@@ -74,3 +74,9 @@
         width: 40%;
     }
 }
+
+@media (min-width: 375px) {
+    .banner__pesquisa {
+        width: 100%;
+    }
+}
