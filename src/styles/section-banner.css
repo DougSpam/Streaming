@@ -53,6 +53,24 @@
     
     
     .banner__pesquisa {
-        width: 60%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 769px) {
+    .banner__pesquisa {
+        width: 40%;
+    }
+}
+
+@media (min-width: 910px) {
+    .banner__pesquisa {
+        width: 40%;
+    }
+}
+
+@media (max-width: 393px) {
+    .banner__pesquisa {
+        width: 40%;
     }
 }
