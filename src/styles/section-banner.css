@@ -75,13 +75,13 @@
     }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 392px) {
     .banner__pesquisa {
-        width: 40%;
+        width: 90%;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 379px) {
     .banner__pesquisa {
         width: 100%;
     }
