@@ -53,6 +53,14 @@
     .banner__pesquisa {
         width: 80%;
     }
+
+    .banner__titulo {
+        font-size: 140%;
+    }
+
+    .banner__texto {
+        font-size: 100%;
+    }
 }
 
 @media (min-width: 769px) {
