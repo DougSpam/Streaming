@@ -12,14 +12,23 @@ document.getElementById('cancelarCompra').addEventListener('click', () => {
 
 document.getElementById('confirmarCompra').addEventListener('click', () => {
     document.getElementById('modal').style.display = 'none';
-    const serviceName = document.getElementById('modal').getAttribute('data-service'); 
-    const message = `Oi, tenho interesse em comprar ${serviceName}.`; 
+    const serviceName = document.getElementById('modal').getAttribute('data-service');
+    let duration = '1 mês';
+
+    if (document.querySelector('.mensal').style.display === 'flex') {
+        duration = '1 mês';
+    } else if (document.querySelector('.trimestral').style.display === 'flex') {
+        duration = '3 mês';
+    }
+
+    const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
     const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
 });
 
 
-// Para o modal do usuário
+
+
 document.getElementById("btnUsuario").addEventListener("click", function() {
     document.getElementById("modalUsuario").style.display = "block";
 });
@@ -28,7 +37,7 @@ document.getElementById("fecharModalUsuario").addEventListener("click", function
     document.getElementById("modalUsuario").style.display = "none";
 });
 
-// Para o modal do carrinho de compras
+
 document.getElementById("btnCarrinho").addEventListener("click", function() {
     document.getElementById("modalCarrinho").style.display = "block";
 });
@@ -54,3 +63,24 @@ function filtrarCards() {
 }
 
 document.getElementById("inputPesquisa").addEventListener("input", filtrarCards);
+
+function showMensal() {
+
+    document.querySelectorAll('.mensal').forEach(element => {
+        element.style.display = 'flex';
+    });
+    document.querySelectorAll('.trimestral').forEach(element => {
+        element.style.display = 'none';
+    });
+}
+
+function showTrimestral() {
+    
+    document.querySelectorAll('.trimestral').forEach(element => {
+        element.style.display = 'flex';
+    });
+    document.querySelectorAll('.mensal').forEach(element => {
+        element.style.display = 'none';
+    });
+}
+

@@ -81,8 +81,14 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
     </section>
     
 
+    <div class="mensall">
+        <button id="mensalBtn" onclick="showMensal()">1 mês</button>
+        <button id="trimestralBtn" onclick="showTrimestral()">3 mês</button>
+    </div>
+    
+
     <section id="cardsContainer" class="card">
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/primevideo.svg" alt="prime video">
             <div class="card__texto">
                 <h1>Prime Video</h1>
@@ -92,7 +98,7 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/netflix.svg" alt="prime video">
             <div class="card__texto">
                 <h1>Netflix</h1>
@@ -102,7 +108,7 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/disney.svg" width="480" height="480" alt="prime video">
             <div class="card__texto">
                 <h1>Disney Plus</h1>
@@ -112,7 +118,7 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/globoplay.svg" alt="prime video">
             <div class="card__texto">
                 <h1>Globoplay</h1>
@@ -122,7 +128,7 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/chunchyroll.svg" alt="prime video">
             <div class="card__texto">
                 <h1>chunchyroll</h1>
@@ -132,7 +138,7 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/hbomax.svg" alt="prime video">
             <div class="card__texto">
                 <h1>hbomax</h1>
@@ -142,7 +148,7 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
             <img class="img-card" src="src/img/starplus.svg" alt="prime video">
             <div class="card__texto">
                 <h1>StarPlus</h1>
@@ -152,7 +158,87 @@ src="https://www.facebook.com/tr?id=963207165292262&ev=PageView&noscript=1"
             </div>
         </div>
 
-        <div class="card__vendas">
+        <div class="card__vendas mensal">
+            <img class="img-card" src="src/img/spotify.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>Spotify</h1>
+                <h2>1 mês</h2>
+                <p class="card__preço">7,00R$</p>
+                <button  id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/primevideo.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>Prime Video</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">19,00R$</p>
+                <button id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/netflix.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>Netflix</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">24,00R$</p>
+                <button id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/disney.svg" width="480" height="480" alt="prime video">
+            <div class="card__texto">
+                <h1>Disney Plus</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">19,00R$</p>
+                <button id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/globoplay.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>Globoplay</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">19,00R$</p>
+                <button  id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/chunchyroll.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>chunchyroll</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">12,00R$</p>
+                <button  id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/hbomax.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>hbomax</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">19,00R$</p>
+                <button  id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
+            <img class="img-card" src="src/img/starplus.svg" alt="prime video">
+            <div class="card__texto">
+                <h1>StarPlus</h1>
+                <h2>3 mês</h2>
+                <p class="card__preço">19,00R$</p>
+                <button  id="comprarProduto">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card__vendas trimestral">
             <img class="img-card" src="src/img/spotify.svg" alt="prime video">
             <div class="card__texto">
                 <h1>Spotify</h1>

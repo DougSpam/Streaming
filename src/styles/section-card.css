@@ -1,3 +1,24 @@
+.mensall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.mensall button {
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+    padding: 0.5em;
+    margin: 0 1.3em;
+    color: white;
+    border-radius: 16px;
+    font-size: 22px;
+
+}
+
+
 .card {
     /* background-image: url(../img/pessoa-segurando-nas-maos-e-digitando-na-foto-do-celular-isolada-em-fundo-preto_746318-2795.avif);
     background-repeat: no-repeat;
@@ -47,6 +68,14 @@
 .card__texto button:hover {
     transition: 0.5s;
     transform: scale(1.1);
+}
+
+.mensal {
+    display: flex;
+}
+
+.trimestral {
+    display: none;
 }
 
 @media (max-width: 768px) {
