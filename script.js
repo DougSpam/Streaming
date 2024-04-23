@@ -17,10 +17,16 @@ document.getElementById('confirmarCompra').addEventListener('click', () => {
 
     if (document.querySelector('.mensal').style.display === 'flex') {
         duration = '1 mês';
+        const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
+        const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, '_blank');
     } else if (document.querySelector('.trimestral').style.display === 'flex') {
         duration = '3 mês';
+        const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
+        const whatsappLink = `https://wa.me/5515996638041?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, '_blank');
     }
-
+    
     const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
     const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
