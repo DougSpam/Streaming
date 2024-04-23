@@ -14,23 +14,22 @@ document.getElementById('confirmarCompra').addEventListener('click', () => {
     document.getElementById('modal').style.display = 'none';
     const serviceName = document.getElementById('modal').getAttribute('data-service');
     let duration = '1 mês';
+    let whatsappNumber = '5511913322531'; // Número padrão
 
-    if (document.querySelector('.mensal').style.display === 'flex') {
-        duration = '1 mês';
-        const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
-        const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
-        window.open(whatsappLink, '_blank');
-    } else if (document.querySelector('.trimestral').style.display === 'flex') {
-        duration = '3 mês';
-        const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
-        const whatsappLink = `https://wa.me/5515996638041?text=${encodeURIComponent(message)}`;
-        window.open(whatsappLink, '_blank');
+
+    const mensalDisplay = window.getComputedStyle(document.querySelector('.mensal')).display;
+    const trimestralDisplay = window.getComputedStyle(document.querySelector('.trimestral')).display;
+
+    if (trimestralDisplay === 'flex') {
+        duration = '3 meses';
+        whatsappNumber = '5515996638041';
     }
-    
+
     const message = `Oi, tenho interesse em comprar ${serviceName} de ${duration}.`;
-    const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
 });
+
 
 
 
